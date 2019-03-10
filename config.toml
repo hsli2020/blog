@@ -1,0 +1,6 @@
+title = "My Hugo Blog"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+copyright = "© 2019 Powered By Hugo"
+newContentEditor = "C:/Software/Vim/vim80/gvim.exe"
+Paginate = 10
