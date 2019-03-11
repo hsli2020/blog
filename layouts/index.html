@@ -2,9 +2,10 @@
 <div class="listing">
 <h1>Blog <span>&rsaquo; All Posts</span></h1>
 <ul class="listing">
-{{ range .Data.Pages -}}
+{{ range (.Paginate ( first 50 .Pages.ByTitle )).Pages }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a> <time>{{ .Date.Format "2006-01-02" }}</time></li>
 {{- end }}
 </ul>
 </div>
+{{ template "_internal/pagination.html" . }}
 {{- end }}

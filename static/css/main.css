@@ -467,6 +467,29 @@ section#contact p:last-child {
 
 /* ===================================================== */
 
+.pagination {
+  margin-top: 40px;
+}
+
+.pagination .page-item {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  margin-left: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.pagination .page-item.active {
+  border: 1px solid #ccc;
+}
+
+.pagination .page-item:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* ===================================================== */
+
 
 .hljs {
   display: block;
