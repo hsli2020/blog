@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Fira+Sans:400,400i,700,800">
 
   {{ if .IsHome -}}
-  <title>{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }} Blog</title>
   {{- else -}}
-  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  <title>{{ .Title }} &middot; {{ .Site.Title }} Blog</title>
   {{- end }}
 
   <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">

@@ -2,9 +2,11 @@
 <article>
   <h1>{{ .Title }}</h1>
   <div class="metadata">
-    <span class="dates">Posted on: {{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-    <span class="tags">
-        Tags: <a href="/blog/category/golang" rel="tag">golang</a><a href="/blog/category/tutorial" rel="tag">tutorial</a>
+    <span class="dates">Posted on: {{ .Date.Format "2006-01-02" }}</span>
+    <span class="tags">Tags:
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" rel="tag">{{ . }}</a>
+      {{ end }}
     </span>
   </div>
   {{ .Content }}

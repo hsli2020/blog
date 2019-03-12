@@ -269,6 +269,15 @@ article .chart {
 
 /* ===================================================== */
 
+pre {
+  margin-bottom: 1.5em;
+  background-color: #fafafa;
+}
+
+code {
+  padding: 1em;
+}
+
 code, figcaption, pre, samp, var, td, th, .tags a {
   font-family: "Fira Mono", monospace;
   font-size: 15px;
